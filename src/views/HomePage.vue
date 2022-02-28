@@ -3,18 +3,21 @@
         <header-nav></header-nav>
         <amoeba-table title='Runnning Job'  textClass='text-success' :parentItems="runningJob"></amoeba-table>
         <amoeba-table title='Pending Job' textClass='text-danger' :parentItems="pendingJob"></amoeba-table>
+        <base-button title='test'> </base-button>
     </div>
 </template>
 
 <script>
 import HeaderNav from '../layouts/HeaderNav.vue'
 import AmoebaTable from '../components/AmoebaTable.vue'
+import BaseButton from '../components/BaseButton.vue'
 
 export default {
 name: 'HomePage',
   components: { 
     HeaderNav ,
-    AmoebaTable
+    AmoebaTable,
+    BaseButton
   }, data() {
       return {
         runningJob: [
